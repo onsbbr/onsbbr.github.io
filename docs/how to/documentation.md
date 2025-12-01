@@ -16,20 +16,20 @@ Ce document vous permet de savoir les étapes basiques à suivre qui facilitent 
 Afin de connecter votre projet sur VScode à votre compte GitHub, veuillez suivre les étapes suivantes :
 
 Après avoir créer votre projet sur VScode, il ne vous reste que de faire :
-- git init
-- git add .
-- git commit -m "votre message"
+- ```git init```
+- ```git add .```
+- ```git commit -m "votre message"```
 
 Après cela, copie le lien de ton projet GitHub :
 
 ![Architecture de séquence](/docs/pictures/lien.png "Architecture de séquences")
 
 - Reviens à VScode et tape :
-git remote add origin https://github.com/onsbbr/onsbbr.github.io.git
+```git remote add origin https://github.com/onsbbr/onsbbr.github.io.git```
 
 - Vérifie que le chemin a bien été pris en charge :
-git remote -v
+```git remote -v```
 
 Ensuite, tape :
-- git branch -M main
-- git push -u origin main
+- ```git branch -M main```
+- ```git push -u origin main```
