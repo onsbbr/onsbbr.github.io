@@ -39,3 +39,8 @@ Ensuite, tape :
 - ```git push -u origin main```
 
 ![Architecture de séquence](/docs/pictures/terminal3.png "Architecture de séquences")
+
+Ensuite, à chaque fois vous ajoutez une chose il suffit de faire :
+- ```git add .```
+- ```git commit -m "votre message"```
+- ```git push```
