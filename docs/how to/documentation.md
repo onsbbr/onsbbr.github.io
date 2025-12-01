@@ -20,6 +20,8 @@ Après avoir créer votre projet sur VScode, il ne vous reste que de faire :
 - ```git add .```
 - ```git commit -m "votre message"```
 
+![Architecture de séquence](/docs/pictures/terminal1.png "Architecture de séquences")
+
 Après cela, copie le lien de ton projet GitHub :
 
 ![Architecture de séquence](/docs/pictures/lien.png "Architecture de séquences")
@@ -30,6 +32,10 @@ Après cela, copie le lien de ton projet GitHub :
 - Vérifie que le chemin a bien été pris en charge :
 ```git remote -v```
 
+![Architecture de séquence](/docs/pictures/terminal2.png "Architecture de séquences")
+
 Ensuite, tape :
 - ```git branch -M main```
 - ```git push -u origin main```
+
+![Architecture de séquence](/docs/pictures/terminal3.png "Architecture de séquences")
