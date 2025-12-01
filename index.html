@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Ons BEN BRAHIM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.2);
+            display: grid;
+            grid-template-columns: 300px 1fr;
+        }
+
+        .sidebar {
+            background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px 30px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            font-weight: bold;
+            border: 5px solid white;
+        }
+
+        .contact-info {
+            margin: 30px 0;
+        }
+
+        .contact-item {
+            margin: 15px 0;
+            font-size: 14px;
+            word-break: break-word;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #3498db;
+            margin-bottom: 5px;
+        }
+
+        .section-title {
+            color: #3498db;
+            font-size: 18px;
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .skills-list {
+            list-style: none;
+        }
+
+        .skill-item {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .skill-category {
+            color: #3498db;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .main-content {
+            padding: 40px 50px;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .name {
+            font-size: 42px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .job-title {
+            font-size: 20px;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .objective {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.8;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+        }
+
+        .main-section-title {
+            color: #2c3e50;
+            font-size: 24px;
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .experience-item, .education-item {
+            margin: 25px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .experience-item:hover, .education-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .exp-title {
+            font-size: 18px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .exp-date {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .exp-company {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .exp-description {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .exp-description li {
+            padding-left: 20px;
+            margin: 8px 0;
+            position: relative;
+            color: #555;
+        }
+
+        .exp-description li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+            .experience-item:hover, .education-item:hover {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                padding: 30px 20px;
+            }
+            .main-content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-img">OB</div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>📧 Email</strong>
+                    onsbbr29@gmail.com
+                </div>
+                <div class="contact-item">
+                    <strong>📱 Téléphone</strong>
+                    06 23 70 92 82
+                </div>
+                <div class="contact-item">
+                    <strong>📍 Localisation</strong>
+                    Île de France
+                </div>
+                <div class="contact-item">
+                    <strong>🎂 Date de naissance</strong>
+                    27/07/2000
+                </div>
+                <div class="contact-item">
+                    <strong>🚗 Permis</strong>
+                    Permis B
+                </div>
+                <div class="contact-item">
+                    <strong>💼 LinkedIn</strong>
+                    ons-ben-brahim-ab39b421a
+                </div>
+            </div>
+
+            <h2 class="section-title">Compétences</h2>
+            <div class="skills-list">
+                <div class="skill-category">Infrastructures</div>
+                <div class="skill-item">Docker, Kubernetes, Helm</div>
+                <div class="skill-item">DevOps, Unix/Linux</div>
+                <div class="skill-item">Virtualisation, GPU</div>
+                <div class="skill-item">GitLab CI/CD</div>
+                
+                <div class="skill-category">Supervision</div>
+                <div class="skill-item">Grafana, Prometheus</div>
+                
+                <div class="skill-category">Programmation</div>
+                <div class="skill-item">Python, C/C++, Java</div>
+                <div class="skill-item">Bash, JavaScript</div>
+                <div class="skill-item">SQL, VHDL</div>
+                
+                <div class="skill-category">Web</div>
+                <div class="skill-item">HTML, CSS, PHP</div>
+                
+                <div class="skill-category">Embarqué</div>
+                <div class="skill-item">Raspberry Pi, Arduino, ESP32</div>
+                
+                <div class="skill-category">Data & IA</div>
+                <div class="skill-item">Big Data, IA</div>
+                <div class="skill-item">Analyse de données</div>
+            </div>
+
+            <h2 class="section-title">Langues</h2>
+            <div class="language-item">
+                <span>Arabe</span>
+                <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="language-item">
+                <span>Français</span>
+                <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="language-item">
+                <span>Anglais</span>
+                <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="language-item">
+                <span>Espagnol</span>
+                <span>⭐</span>
+            </div>
+
+            <h2 class="section-title">Centres d'intérêt</h2>
+            <div class="skill-item">📷 Photographie</div>
+            <div class="skill-item">💬 Réseaux sociaux</div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1 class="name">Ons BEN BRAHIM</h1>
+                <div class="job-title">Ingénieure Réseaux et Systèmes</div>
+                <div class="objective">
+                    Jeune diplômée en Ingénierie des Réseaux et des Systèmes à l'Université de Versailles, 
+                    je suis à la recherche d'un premier emploi dans le domaine des technologies de l'information, 
+                    disponible à partir du mois de janvier.
+                </div>
+            </header>
+
+            <section>
+                <h2 class="main-section-title">📚 Formation</h2>
+                
+                <div class="education-item">
+                    <div class="exp-header">
+                        <div class="exp-title">Master en Ingénierie des Réseaux et des Systèmes</div>
+                        <div class="exp-date">2023 - 2025</div>
+                    </div>
+                    <div class="exp-company">UVSQ Versailles, France</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="exp-header">
+                        <div class="exp-title">Licence en Technologies de l'Information et des Communications</div>
+                        <div class="exp-date">2019 - 2022</div>
+                    </div>
+                    <div class="exp-company">ISSAT Tunisie</div>
+                    <div style="color: #666; margin-top: 10px;">Spécialité : Système des Traitements et d'Analyse de l'Information</div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="main-section-title">💼 Expériences Professionnelles</h2>
+
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="exp-title">Stage DevOps - Gestion des ressources GPU</div>
+                        <div class="exp-date">2025</div>
+                    </div>
+                    <div class="exp-company">UVSQ Paris Saclay, Versailles</div>
+                    <ul class="exp-description">
+                        <li>Conception et déploiement d'une architecture de gestion permettant le partage et l'optimisation des ressources GPU entre plusieurs serveurs</li>
+                        <li>Étude et mise en œuvre de solutions de virtualisation GPU et d'allocation dynamique des ressources</li>
+                        <li>Intégration et configuration d'environnements virtualisés via Kubernetes, Helm et Python</li>
+                        <li>Tests de performance et validation de la répartition des charges entre serveurs</li>
+                        <li>Documentation technique complète (installation, utilisation et limites du système)</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="exp-title">Stagiaire Développeuse - Système de détection d'obstacles</div>
+                        <div class="exp-date">2022</div>
+                    </div>
+                    <div class="exp-company">ISSAT Tunisie</div>
+                    <ul class="exp-description">
+                        <li>Conception d'un système composé d'une lunette et d'une canne couplées pour personnes aveugles</li>
+                        <li>Programmation en Python sur Raspberry Pi avec capteurs ultrasoniques</li>
+                        <li>Réalisation d'un dispositif fonctionnel et innovant renforçant l'autonomie des personnes non-voyantes</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="exp-title">Stagiaire Gestionnaire Comptable</div>
+                        <div class="exp-date">2021</div>
+                    </div>
+                    <div class="exp-company">Hôpital de la circonscription de la Chebba, Tunisie</div>
+                    <ul class="exp-description">
+                        <li>Utilisation d'un logiciel d'ordonnancement pour planifier et éditer des factures</li>
+                        <li>Vérification et contrôle de la cohérence des données comptables</li>
+                        <li>Suivi et mise à jour des informations liées aux opérations financières</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="exp-title">Stagiaire Technicienne Informatique</div>
+                        <div class="exp-date">2020</div>
+                    </div>
+                    <div class="exp-company">Tunisie Telecom, Tunisie</div>
+                    <ul class="exp-description">
+                        <li>Diagnostic et résolution de problèmes réseaux (perte de connexion, défaillances ADSL/fibre)</li>
+                        <li>Intervention sur le terrain avec les équipes techniques pour résoudre les incidents</li>
+                        <li>Configuration des équipements clients et vérification des connexions réseau</li>
+                        <li>Amélioration de la qualité de service et satisfaction client</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="main-section-title">🚀 Projets</h2>
+
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="exp-title">Projet Réseau - Architecture Sécurisée</div>
+                        <div class="exp-date">2025</div>
+                    </div>
+                    <div class="exp-company">UVSQ Paris Saclay, Versailles</div>
+                    <ul class="exp-description">
+                        <li>Analyse du cahier des charges et définition de l'architecture réseau cible</li>
+                        <li>Conception d'une infrastructure sécurisée : VLANs, ACLs, Multi-WAN, 5G privé</li>
+                        <li>Mise en œuvre des dispositifs de sécurité : firewall, VPN</li>
+                        <li>Planification de la scalabilité, redondance et haute disponibilité</li>
+                        <li>Architecture fonctionnelle, sécurisée et conforme au budget</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="exp-title">Système de détection d'obstacles - Smart Home</div>
+                        <div class="exp-date">2021</div>
+                    </div>
+                    <div class="exp-company">ISSAT Tunisie</div>
+                    <ul class="exp-description">
+                        <li>Conception et réalisation d'un système basé sur Arduino</li>
+                        <li>Intégration de capteurs ultrason pour détection en temps réel</li>
+                        <li>Programmation et configuration du microcontrôleur Arduino</li>
+                        <li>Développement d'un prototype orienté domotique</li>
+                        <li>Tests et validation du système pour améliorer la précision</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
