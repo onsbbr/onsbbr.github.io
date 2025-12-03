@@ -4,16 +4,36 @@
   "icon": "bi bi-list-check",
   "list": [
     {
-      "skill": "Skill 1, Skill 2",
+      "skill": "Docker, Kubernetes, Helm",
       "skillrating": 90
     },
     {
-      "skill": "Skill 3",
+      "skill": "DevOps, GitLab CI/CD, Linux",
       "skillrating": 80
     },
     {
-      "skill": "Skill 4",
+      "skill": "Virtualization, GPU",
       "skillrating": 50
+    },
+    {
+      "skill": "Grafana, Prometheus",
+      "skillrating": 80
+    },
+    {
+      "skill": "Python, Bash, C/C++, SQL, Java",
+      "skillrating": 80
+    },
+    {
+      "skill": "HTML, CSS, PHP",
+      "skillrating": 80
+    },
+    {
+      "skill": "Raspberry Pi, Arduino, ESP32",
+      "skillrating": 80
+    },
+    {
+      "skill": "Big Data, IA, Analyse des données",
+      "skillrating": 80
     }
   ]
 }

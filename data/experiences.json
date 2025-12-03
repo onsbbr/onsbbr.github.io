@@ -2,26 +2,46 @@
   "title": "Experiences",
   "icon": "bi bi-briefcase",
   "list": [{
-      "position": "Job Title",
-      "dates": "2022 - *Present*",
+      "position": "Stage DevOps - Gestion des ressources GPU",
+      "dates": "2025",
       "url": "#",
-      "company": "Company Name"
-    },
-    {
-      "position": "Job Title",
-      "dates": "2019 - 2022",
-      "company": "Company Name",
+      "company": "Laboratoire DAVID - UVSQ, France",
       "details": [
-        "Printed from desktop. Sent [emails](#). Called people *using* telephone.",
-        "Drank water from office cooler.",
-        "Ate donuts on people's birthdays."
+        "Développement d'une solution de gestion et d'orchestration des ressources GPU dans un cluster Kubernetes en utilisant des outils tels que Docker, Kubernetes, Helm, et Prometheus.",
+        "Mise en place de pipelines CI/CD avec GitLab pour automatiser le déploiement des applications conteneurisées.",
+        "Surveillance des performances du cluster et optimisation de l'utilisation des ressources GPU à l'aide de Grafana et Prometheus."
       ]
     },
     {
-      "position": "Job Title",
-      "dates": "2018 - 2019",
-      "url": "#",
-      "company": "Company Name"
+      "position": "Stagiaire Développeuse - Système de détection d'obstacles",
+      "dates": "2022",
+      "company": "ISSAT, Tunisie",
+      "details": [
+        "Conception et développement d'un système de détection d'obstacles pour les personnes malvoyantes en utilisant des capteurs ultrasoniques et une carte Arduino.",
+        "Programmation en Python pour le traitement des données des capteurs et la génération d'alertes sonores.",
+        "Test et validation du système dans divers environnements pour assurer sa fiabilité et son efficacité."
+      ]
+    },
+    {
+      "position": "Stagiaire Gestionnaire Comptable",
+      "dates": "2021",
+      "company": "Hôpital de la circonscription de la Chebba, Tunisie",
+      "details": [
+        "Assistance dans la gestion comptable de l'hôpital.",
+        "Utilisation de logiciels comptables pour automatiser les tâches de facturation et de suivi des paiements.",
+        "Collaboration avec l'équipe financière pour améliorer les processus de gestion des ressources et optimiser les coûts."
+      ]
+    },
+    {
+      "position": "Stagiaire Technicienne Informatique",
+      "dates": "2020",
+      "company": "Tunisie Telecom, Tunisie",
+      "details": [
+        "Diagnostic et résolution de problèmes réseaux (perte de connexion, défaillances ADSL/fibre).",
+        "Intervention sur le terrain avec les équipes techniques pour résoudre les incidents.",
+        "Configuration des équipements clients et vérification des connexions réseau.",
+        "Amélioration de la qualité de service et satisfaction client."
+      ]
     }
   ]
 }

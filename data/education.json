@@ -3,23 +3,19 @@
   "icon": "bi bi-mortarboard",
   "list": [
     {
-      "degree": "Ph.D. in Subject",
-      "college": "University of State-City",
-      "dates": "2013 - 2018",
-      "thesis_title": "Effect of humans on other humans: a study of human behavior.",
-      "thesis_url": "#"
+      "degree": "Master en Ingénierie des Réseaux et des Systèmes",
+      "college": "UVSQ Versailles, France",
+      "dates": "2023 - 2025"
     },
     {
-      "degree": "M.S. in Subject",
-      "college": "University of State-City",
-      "dates": "2013 - 2018",
-      "thesis_title": "Effect of humans on other humans: a study of human behavior.",
-      "thesis_url": "#"
+      "degree": "Licence en Technologies de l'Information et des Communications",
+      "college": "ISSAT, Tunisie",
+      "dates": "2019 - 2022"
     },
     {
-      "degree": "B.S. in Subject",
-      "college": "University of State-City",
-      "dates": "2004 - 2009"
+      "degree": "Baccalauréat en Sciences Expérimentales",
+      "college": "Lycée Abou Kacem Chebbi, Tunisie",
+      "dates": "2018 - 2019"
     }
   ]
 }
