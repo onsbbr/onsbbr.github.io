@@ -4,7 +4,6 @@
   "list": [{
       "position": "DevOps Internship - Design of an architecture and a GPU resource management system",
       "dates": "2025",
-      "url": "#",
       "company": "DAVID Laboratory - UVSQ, France",
       "details": [
         "Design and deployment of a management architecture allowing the sharing and optimization of GPU resources between multiple servers.",
