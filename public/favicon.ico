@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-    <rect width="200" height="200" fill="#ffffff"/>
-    <text x="50" y="130" font-size="80" font-weight="bold" font-family="Arial" fill="#000000">O</text>
-    <text x="110" y="130" font-size="80" font-weight="bold" font-family="Arial" fill="#000000">B</text>
-</svg>
+<link rel="icon" type="image/svg+xml" href="docs/pictures/ob.png">
