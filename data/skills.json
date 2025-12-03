@@ -9,11 +9,11 @@
     },
     {
       "skill": "DevOps, GitLab CI/CD, Linux",
-      "skillrating": 80
+      "skillrating": 90
     },
     {
       "skill": "Virtualization, GPU",
-      "skillrating": 50
+      "skillrating": 90
     },
     {
       "skill": "Grafana, Prometheus",
@@ -21,7 +21,7 @@
     },
     {
       "skill": "Python, Bash, C/C++, SQL, Java",
-      "skillrating": 80
+      "skillrating": 60
     },
     {
       "skill": "HTML, CSS, PHP",
@@ -33,7 +33,7 @@
     },
     {
       "skill": "Big Data, IA, Analyse des données",
-      "skillrating": 80
+      "skillrating": 70
     }
   ]
 }

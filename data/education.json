@@ -3,18 +3,19 @@
   "icon": "bi bi-mortarboard",
   "list": [
     {
-      "degree": "Master en Ingénierie des Réseaux et des Systèmes",
+      "degree": "Master in Network and Systems Engineering",
       "college": "UVSQ Versailles, France",
       "dates": "2023 - 2025"
     },
     {
-      "degree": "Licence en Technologies de l'Information et des Communications",
-      "college": "ISSAT, Tunisie",
-      "dates": "2019 - 2022"
+      "degree": "Bachelor in Information and Communication Technologies",
+      "college": "ISSAT, Tunisia",
+      "dates": "2019 - 2022",
+      "description": "Speciality : Bachelor in Information Processing and Analysis Systems"
     },
     {
-      "degree": "Baccalauréat en Sciences Expérimentales",
-      "college": "Lycée Abou Kacem Chebbi, Tunisie",
+      "degree": "High School Diploma in Experimental Sciences",
+      "college": "Abou Kacem Chebbi High School, Tunisia",
       "dates": "2018 - 2019"
     }
   ]

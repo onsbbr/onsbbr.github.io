@@ -3,27 +3,27 @@
   "icon": "bi bi-kanban",
   "list": [
   {
-      "title": "Projet Réseau - Architecture Sécurisée d'une Entreprise",
+      "title": "Network Project - Design of a secure architecture according to specifications",
       "dates": "2025",
       "company": "UVSQ Paris Saclay, Versailles",
       "details": [
-        "Analyse du cahier des charges et définition de l'architecture réseau cible",
-        "Conception d'une infrastructure sécurisée : VLANs, ACLs, Multi-WAN, 5G privée",
-        "Mise en œuvre des dispositifs de sécurité : firewall, VPN",
-        "Planification de la scalabilité, redondance et haute disponibilité",
-        "Architecture fonctionnelle, sécurisée et conforme au budget"
+        "Analysis of specifications and definition of the target network architecture.",
+        "Design of a secure network infrastructure: VLANs, ACLs, Multi-WAN, private 5G.",
+        "Implementation of security devices: firewall, VPN.",
+        "Planning for scalability, redundancy, and high availability.",
+        "Functional, secure architecture compliant with budget"
       ]
     },
     {
-      "title": "Système de détection d'obstacles - Smart Home",
+      "title": "Development Project - Obstacle Detection System (Arduino, Smart Home)",
       "dates": "2021",
-      "company": "ISSAT, Tunisie",
+      "company": "ISSAT, Tunisia",
       "details": [
-        "Conception et réalisation d'un système basé sur Arduino",
-        "Intégration de capteurs ultrason pour détection en temps réel",
-        "Programmation et configuration du microcontrôleur Arduino",
-        "Développement d'un prototype orienté domotique",
-        "Tests et validation du système pour améliorer la précision"
+        "Design and implementation of an obstacle detection system based on Arduino.",
+        "Integration of ultrasonic sensors for real-time detection.",
+        "Programming and configuration of the Arduino microcontroller.",
+        "Development of a prototype oriented towards Smart Home / home automation.",
+        "Testing and validation of the system to improve accuracy."
       ]
     }
   ]

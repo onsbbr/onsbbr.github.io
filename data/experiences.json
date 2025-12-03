@@ -2,45 +2,47 @@
   "title": "Experiences",
   "icon": "bi bi-briefcase",
   "list": [{
-      "position": "Stage DevOps - Gestion des ressources GPU",
+      "position": "DevOps Internship - Design of an architecture and a GPU resource management system",
       "dates": "2025",
       "url": "#",
-      "company": "Laboratoire DAVID - UVSQ, France",
+      "company": "DAVID Laboratory - UVSQ, France",
       "details": [
-        "Développement d'une solution de gestion et d'orchestration des ressources GPU dans un cluster Kubernetes en utilisant des outils tels que Docker, Kubernetes, Helm, et Prometheus.",
-        "Mise en place de pipelines CI/CD avec GitLab pour automatiser le déploiement des applications conteneurisées.",
-        "Surveillance des performances du cluster et optimisation de l'utilisation des ressources GPU à l'aide de Grafana et Prometheus."
+        "Design and deployment of a management architecture allowing the sharing and optimization of GPU resources between multiple servers.",
+        "Study and implementation of GPU virtualization solutions and dynamic resource allocation in AI and non-IA environments.",
+        "Integration and configuration of virtualized environments using Kubernetes, Helm, and Python.",
+        "Performance testing and validation of load distribution between servers.",
+        "Complete technical documentation (installation, use, and limitations of the designed system)."
       ]
     },
     {
-      "position": "Stagiaire Développeuse - Système de détection d'obstacles",
+      "position": "Developer internship - Obstacle Detection System for the blind",
       "dates": "2022",
-      "company": "ISSAT, Tunisie",
+      "company": "ISSAT, Tunisia",
       "details": [
-        "Conception et développement d'un système de détection d'obstacles pour les personnes malvoyantes en utilisant des capteurs ultrasoniques et une carte Arduino.",
-        "Programmation en Python pour le traitement des données des capteurs et la génération d'alertes sonores.",
-        "Test et validation du système dans divers environnements pour assurer sa fiabilité et son efficacité."
+        "Design of a system consisting of smart glasses and a smart cane, allowing blind people to detect obstacles.",
+        "Programming in Python on Raspberry Pi with ultrasonic sensors.",
+        "Creation of a functional and innovative device that can enhance the autonomy of visually impaired individuals."
       ]
     },
     {
-      "position": "Stagiaire Gestionnaire Comptable",
+      "position": "Accounting manager internship",
       "dates": "2021",
-      "company": "Hôpital de la circonscription de la Chebba, Tunisie",
+      "company": "Chebba District Hospital, Tunisia",
       "details": [
-        "Assistance dans la gestion comptable de l'hôpital.",
-        "Utilisation de logiciels comptables pour automatiser les tâches de facturation et de suivi des paiements.",
-        "Collaboration avec l'équipe financière pour améliorer les processus de gestion des ressources et optimiser les coûts."
+        "Use of scheduling software to plan and edit invoices.",
+        "Verification and control of the consistency of accounting data.",
+        "Monitoring and updating information related to financial operations."
       ]
     },
     {
-      "position": "Stagiaire Technicienne Informatique",
+      "position": "IT technician internship",
       "dates": "2020",
-      "company": "Tunisie Telecom, Tunisie",
+      "company": "Tunisia Telecom, Tunisia",
       "details": [
-        "Diagnostic et résolution de problèmes réseaux (perte de connexion, défaillances ADSL/fibre).",
-        "Intervention sur le terrain avec les équipes techniques pour résoudre les incidents.",
-        "Configuration des équipements clients et vérification des connexions réseau.",
-        "Amélioration de la qualité de service et satisfaction client."
+        "Diagnosis and resolution of network problems encountered by customers (connection loss, ADSL/fiber failures, incorrect client configuration).",
+        "Intervention on the ground with technical teams to resolve incidents and restore services quickly.",
+        "Participation in configuring client equipment and verifying network connections.",
+        "Improvement of service quality and customer satisfaction."
       ]
     }
   ]

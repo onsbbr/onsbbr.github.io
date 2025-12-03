@@ -3,10 +3,13 @@
   "icon": "bi bi-controller",
   "list": [
     {
-      "hobby": "Photographie"
+      "hobby": "Photography"
     },
     {
-      "hobby": "Natation"
+      "hobby": "Swimming"
+    },
+    {
+      "hobby": "Cooking"
     }
   ]
 }
