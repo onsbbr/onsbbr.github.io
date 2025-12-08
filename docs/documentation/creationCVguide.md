@@ -139,10 +139,6 @@ Cette méthode utilise Hugo (un générateur de site statique) et reconstruit au
 - Large choix de thèmes professionnels
 - Génération rapide du site
 
-### Configuration
-- Créez un workflow GitHub Actions dans `.github/workflows/`
-- GitHub reconstruira votre site automatiquement à chaque commit
-
 ### Étape 1 : Configuration du Projet
 
 1. **Créer un nouveau repository sur GitHub**

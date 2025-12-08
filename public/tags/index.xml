@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on aafu theme</title>
-    <link>/tags/</link>
+    <link>//localhost:1313/tags/</link>
     <description>Recent content in Tags on aafu theme</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 19 Nov 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Css</title>
-      <link>/tags/css/</link>
+      <link>//localhost:1313/tags/css/</link>
       <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>/tags/css/</guid>
+      <guid>//localhost:1313/tags/css/</guid>
       <description></description>
     </item>
     <item>
       <title>Html</title>
-      <link>/tags/html/</link>
+      <link>//localhost:1313/tags/html/</link>
       <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>/tags/html/</guid>
+      <guid>//localhost:1313/tags/html/</guid>
       <description></description>
     </item>
     <item>
       <title>Markdown</title>
-      <link>/tags/markdown/</link>
+      <link>//localhost:1313/tags/markdown/</link>
       <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>/tags/markdown/</guid>
+      <guid>//localhost:1313/tags/markdown/</guid>
       <description></description>
     </item>
     <item>
       <title>Themes</title>
-      <link>/tags/themes/</link>
+      <link>//localhost:1313/tags/themes/</link>
       <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>/tags/themes/</guid>
+      <guid>//localhost:1313/tags/themes/</guid>
       <description></description>
     </item>
     <item>
       <title>Laoreet</title>
-      <link>/tags/laoreet/</link>
+      <link>//localhost:1313/tags/laoreet/</link>
       <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/tags/laoreet/</guid>
+      <guid>//localhost:1313/tags/laoreet/</guid>
       <description></description>
     </item>
     <item>
       <title>Mollis Urna</title>
-      <link>/tags/mollis-urna/</link>
+      <link>//localhost:1313/tags/mollis-urna/</link>
       <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/tags/mollis-urna/</guid>
+      <guid>//localhost:1313/tags/mollis-urna/</guid>
       <description></description>
     </item>
     <item>
       <title>Notes</title>
-      <link>/tags/notes/</link>
+      <link>//localhost:1313/tags/notes/</link>
       <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/tags/notes/</guid>
+      <guid>//localhost:1313/tags/notes/</guid>
       <description></description>
     </item>
   </channel>
