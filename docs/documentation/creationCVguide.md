@@ -64,7 +64,7 @@ Ce guide vous explique comment créer et déployer votre propre CV en ligne en u
 ```
 ![Architecture de séquence](/docs/pictures/gitPush.png "Architecture de séquences")
 
-##### Troubleshooting : Résolution des Problèmes de push
+#### Troubleshooting : Résolution des Problèmes de push
 
 Si vous rencontrez une erreur lors du push, comme celle ci :
 
