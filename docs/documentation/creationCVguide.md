@@ -67,6 +67,7 @@ Ce guide vous explique comment créer et déployer votre propre CV en ligne en u
 ##### Troubleshooting : Résolution des Problèmes de push
 
 Si vous rencontrez une erreur lors du push, comme celle ci :
+
 ![Architecture de séquence](/docs/pictures/gitpushTSH.png "Architecture de séquences")
 
 Veuillez suivre ces étapes pour configurer une clé SSH :
@@ -98,12 +99,15 @@ Veuillez suivre ces étapes pour configurer une clé SSH :
    - Allez dans `Settings → SSH and GPG keys`
    - Cliquez sur `New SSH key`
    - Collez la clé copiée et cliquez sur `Add SSH key`
+
 ![Architecture de séquence](/docs/pictures/newSSHkey.png "Architecture de séquences")
 ![Architecture de séquence](/docs/pictures/sshKEYcreated.png "Architecture de séquences")
 
 
 6. **Retenter le push**
+
    - La commande `git push` devrait maintenant fonctionner
+
 ![Architecture de séquence](/docs/pictures/gitpushaftersshkey.png "Architecture de séquences")
 
 
@@ -113,6 +117,7 @@ Veuillez suivre ces étapes pour configurer une clé SSH :
 2. Sous "Source", sélectionnez `Deploy from a branch`
 3. Choisissez la branche `main` et le dossier `/root`
 4. Cliquez sur `Save`
+
 ![Architecture de séquence](/docs/pictures/githubpages.png "Architecture de séquences")
 
 Votre CV sera accessible à l'adresse : `https://votre-nom.github.io`
@@ -152,6 +157,7 @@ Cette méthode utilise Hugo (un générateur de site statique) et reconstruit au
 ```
 
 3. **Choisir et installer un thème**
+
    - Visitez `https://themes.gohugo.io/` pour explorer les thèmes disponibles
    - Exemple avec le thème [AAFU](https://github.com/darshanbaral/aafu) :
 ```bash
@@ -254,6 +260,7 @@ Cette méthode utilise Hugo (un générateur de site statique) et reconstruit au
 ```
 
 ![Configuration du workflow GitHub Actions](/docs/pictures/workflowhugo.png "Fichier workflow Hugo")
+
 ![Résultat du workflow](/docs/pictures/hugoo.png "Workflow en action")
 
 3. **Commit et push du workflow**
@@ -285,74 +292,6 @@ Pour mettre à jour votre CV :
 2. Testez localement avec `hugo server -D`
 3. Commit et push vos modifications
 4. GitHub Actions déploiera automatiquement les changements
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- Créer un repo local vide
-- Choisir et télécharger le thème/portfolio souhaité à partir du site `https://themes.gohugo.io/`
-- Suivre les étapes d'installation du thème comme indique le projet choisi (par exemple le thème [AAFU](https://github.com/darshanbaral/aafu/tree/82c7ae045f6a5a1e957ce57f3d83c5e27e514d14))
-- Commit et push du code Hugo
-![Architecture de séquence](/docs/pictures/aafutheme.png "Architecture de séquences")
-
-### Étape 2 : Ajouter GitHub Action pour Hugo
-
-![Architecture de séquence](/docs/pictures/workflowhugo.png "Architecture de séquences")
-![Architecture de séquence](/docs/pictures/hugoo.png "Architecture de séquences")
-
-### Étape 3 : Activer GitHub Pages
-
-![Architecture de séquence](/docs/pictures/githubpageshugo.png "Architecture de séquences")
-
-Ton site deviendra accessible à une URL comme :`https://ton_pseudo.github.io/repo_name/`
 
 ---
 
