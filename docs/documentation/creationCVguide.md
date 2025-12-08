@@ -24,6 +24,7 @@ Ce guide vous explique comment créer et déployer votre propre CV en ligne en u
    ├── index.html
    └── README.md
 ```
+![Architecture de séquence](/docs/pictures/structureGITHUB.png "Architecture de séquences")
 
 3. **Description des fichiers**
    - `index.html` : Contient le code HTML de votre CV
@@ -38,14 +39,20 @@ Ce guide vous explique comment créer et déployer votre propre CV en ligne en u
    - Connectez-vous à votre compte GitHub
    - Créez un nouveau repository (de préférence nommé `votre-nom.github.io`)
 
+![Architecture de séquence](/docs/pictures/CreateNewRepo.png "Architecture de séquences")
+![Architecture de séquence](/docs/pictures/NameNewRepo.png "Architecture de séquences")
+![Architecture de séquence](/docs/pictures/configurationPublic.png "Architecture de séquences")
+![Architecture de séquence](/docs/pictures/boutonCreation.png "Architecture de séquences")
+
 2. **Initialiser Git dans VSCode**
    - Ouvrez le terminal dans VSCode (Git Bash recommandé)
    - Exécutez les commandes suivantes :
 ```bash
    git init
    git add .
-   git commit -m "Premier commit - CV en ligne"
+   git commit -m "Mon premier commit"
 ```
+![Architecture de séquence](/docs/pictures/phase1.png "Architecture de séquences")
 
 3. **Lier le projet local à GitHub**
    - Copiez les commandes fournies par GitHub après la création du repository
@@ -55,15 +62,20 @@ Ce guide vous explique comment créer et déployer votre propre CV en ligne en u
    git branch -M main
    git push -u origin main
 ```
+![Architecture de séquence](/docs/pictures/gitPush.png "Architecture de séquences")
 
-### Résolution des Problèmes (Troubleshooting)
+##### Troubleshooting : Résolution des Problèmes de push
 
-Si vous rencontrez une erreur lors du push, suivez ces étapes pour configurer une clé SSH :
+Si vous rencontrez une erreur lors du push, comme celle ci :
+![Architecture de séquence](/docs/pictures/gitpushTSH.png "Architecture de séquences")
+
+Veuillez suivre ces étapes pour configurer une clé SSH :
 
 1. **Générer une clé SSH**
 ```bash
    ssh-keygen -t ed25519 -C "votre-email-github@example.com"
 ```
+![Architecture de séquence](/docs/pictures/sshkeygen.png "Architecture de séquences")
 
 2. **Lancer l'agent SSH**
 ```bash
@@ -79,15 +91,21 @@ Si vous rencontrez une erreur lors du push, suivez ces étapes pour configurer u
 ```bash
    cat ~/.ssh/id_ed25519.pub
 ```
+![Architecture de séquence](/docs/pictures/addkey.png "Architecture de séquences")
 
 5. **Ajouter la clé à GitHub**
    - Connectez-vous à GitHub
    - Allez dans `Settings → SSH and GPG keys`
    - Cliquez sur `New SSH key`
    - Collez la clé copiée et cliquez sur `Add SSH key`
+![Architecture de séquence](/docs/pictures/newSSHkey.png "Architecture de séquences")
+![Architecture de séquence](/docs/pictures/sshKEYcreated.png "Architecture de séquences")
+
 
 6. **Retenter le push**
    - La commande `git push` devrait maintenant fonctionner
+![Architecture de séquence](/docs/pictures/gitpushaftersshkey.png "Architecture de séquences")
+
 
 ### Étape 3 : Activer GitHub Pages
 
@@ -95,21 +113,246 @@ Si vous rencontrez une erreur lors du push, suivez ces étapes pour configurer u
 2. Sous "Source", sélectionnez `Deploy from a branch`
 3. Choisissez la branche `main` et le dossier `/root`
 4. Cliquez sur `Save`
+![Architecture de séquence](/docs/pictures/githubpages.png "Architecture de séquences")
 
 Votre CV sera accessible à l'adresse : `https://votre-nom.github.io`
 
 ## Méthode 2 : Déploiement Automatique avec GitHub Actions
 
-Cette méthode est moins manuelle et reconstruit automatiquement votre site à chaque modification (push).
+Cette méthode utilise Hugo (un générateur de site statique) et reconstruit automatiquement votre site à chaque modification (push).
 
-**Avantages :**
+### Prérequis
+- Un compte GitHub
+- VSCode installé sur votre ordinateur
+- Git installé sur votre système
+- Hugo installé ([Guide d'installation Hugo](https://gohugo.io/installation/))
+
+### Avantages
 - Déploiement automatique à chaque push
 - Pas besoin de déploiement manuel
 - Idéal pour les mises à jour fréquentes
+- Large choix de thèmes professionnels
+- Génération rapide du site
 
-**Configuration :**
+### Configuration
 - Créez un workflow GitHub Actions dans `.github/workflows/`
 - GitHub reconstruira votre site automatiquement à chaque commit
+
+### Étape 1 : Configuration du Projet
+
+1. **Créer un nouveau repository sur GitHub**
+   - Connectez-vous à votre compte GitHub
+   - Créez un nouveau repository (exemple : `mon-cv-hugo`)
+
+2. **Initialiser un projet Hugo localement**
+```bash
+   hugo new site mon-cv-hugo
+   cd mon-cv-hugo
+   git init
+```
+
+3. **Choisir et installer un thème**
+   - Visitez `https://themes.gohugo.io/` pour explorer les thèmes disponibles
+   - Exemple avec le thème [AAFU](https://github.com/darshanbaral/aafu) :
+```bash
+   git submodule add https://github.com/darshanbaral/aafu.git themes/aafu
+```
+
+4. **Configurer le thème**
+   - Suivez les instructions d'installation spécifiques au thème choisi
+   - Modifiez le fichier `config.toml` ou `hugo.toml` selon les recommandations du thème
+   - Personnalisez le contenu dans le dossier `content/`
+
+![Exemple de configuration du thème AAFU](/docs/pictures/aafutheme.png "Configuration du thème AAFU")
+
+5. **Tester localement**
+```bash
+   hugo server -D
+```
+   Visitez `http://localhost:1313` pour prévisualiser votre site
+
+6. **Commit et push initial**
+```bash
+   git add .
+   git commit -m "Initial commit - Configuration Hugo"
+   git remote add origin git@github.com:votre-nom/mon-cv-hugo.git
+   git branch -M main
+   git push -u origin main
+```
+
+### Étape 2 : Configurer GitHub Actions pour Hugo
+
+1. **Créer le fichier workflow**
+   - Créez le dossier `.github/workflows/` à la racine de votre projet
+   - Créez un fichier `hugo.yml` dans ce dossier
+
+2. **Ajouter la configuration du workflow**
+   Copiez le contenu suivant dans `.github/workflows/hugo.yml` :
+```yaml
+   name: Deploy Hugo site to Pages
+
+   on:
+     push:
+       branches:
+         - main
+     workflow_dispatch:
+
+   permissions:
+     contents: read
+     pages: write
+     id-token: write
+
+   concurrency:
+     group: "pages"
+     cancel-in-progress: false
+
+   defaults:
+     run:
+       shell: bash
+
+   jobs:
+     build:
+       runs-on: ubuntu-latest
+       env:
+         HUGO_VERSION: 0.128.0
+       steps:
+         - name: Install Hugo CLI
+           run: |
+             wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+             && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+         - name: Checkout
+           uses: actions/checkout@v4
+           with:
+             submodules: recursive
+             fetch-depth: 0
+         - name: Setup Pages
+           id: pages
+           uses: actions/configure-pages@v4
+         - name: Build with Hugo
+           env:
+             HUGO_ENVIRONMENT: production
+           run: |
+             hugo \
+               --gc \
+               --minify \
+               --baseURL "${{ steps.pages.outputs.base_url }}/"
+         - name: Upload artifact
+           uses: actions/upload-pages-artifact@v3
+           with:
+             path: ./public
+
+     deploy:
+       environment:
+         name: github-pages
+         url: ${{ steps.deployment.outputs.page_url }}
+       runs-on: ubuntu-latest
+       needs: build
+       steps:
+         - name: Deploy to GitHub Pages
+           id: deployment
+           uses: actions/deploy-pages@v4
+```
+
+![Configuration du workflow GitHub Actions](/docs/pictures/workflowhugo.png "Fichier workflow Hugo")
+![Résultat du workflow](/docs/pictures/hugoo.png "Workflow en action")
+
+3. **Commit et push du workflow**
+```bash
+   git add .github/workflows/hugo.yml
+   git commit -m "Ajout du workflow GitHub Actions pour Hugo"
+   git push
+```
+
+### Étape 3 : Activer GitHub Pages
+
+1. Allez dans les paramètres du repository : `Settings → Pages`
+2. Sous "Source", sélectionnez `GitHub Actions`
+3. Le workflow se déclenchera automatiquement à chaque push
+
+![Configuration de GitHub Pages](/docs/pictures/githubpageshugo.png "Activation de GitHub Pages")
+
+4. **Vérifier le déploiement**
+   - Allez dans l'onglet `Actions` de votre repository
+   - Vérifiez que le workflow s'exécute correctement
+   - Une fois terminé, votre site sera accessible
+
+Votre site sera accessible à l'adresse : `https://ton_pseudo.github.io/repo_name/`
+
+### Mise à jour du site
+
+Pour mettre à jour votre CV :
+1. Modifiez les fichiers de contenu dans le dossier `content/`
+2. Testez localement avec `hugo server -D`
+3. Commit et push vos modifications
+4. GitHub Actions déploiera automatiquement les changements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- Créer un repo local vide
+- Choisir et télécharger le thème/portfolio souhaité à partir du site `https://themes.gohugo.io/`
+- Suivre les étapes d'installation du thème comme indique le projet choisi (par exemple le thème [AAFU](https://github.com/darshanbaral/aafu/tree/82c7ae045f6a5a1e957ce57f3d83c5e27e514d14))
+- Commit et push du code Hugo
+![Architecture de séquence](/docs/pictures/aafutheme.png "Architecture de séquences")
+
+### Étape 2 : Ajouter GitHub Action pour Hugo
+
+![Architecture de séquence](/docs/pictures/workflowhugo.png "Architecture de séquences")
+![Architecture de séquence](/docs/pictures/hugoo.png "Architecture de séquences")
+
+### Étape 3 : Activer GitHub Pages
+
+![Architecture de séquence](/docs/pictures/githubpageshugo.png "Architecture de séquences")
+
+Ton site deviendra accessible à une URL comme :`https://ton_pseudo.github.io/repo_name/`
 
 ---
 
@@ -125,3 +368,5 @@ Cette méthode est moins manuelle et reconstruit automatiquement votre site à c
 - [Documentation GitHub Pages](https://docs.github.com/pages)
 - [Guide Git](https://git-scm.com/doc)
 - [Documentation VSCode](https://code.visualstudio.com/docs)
+- [Documentation Hugo](https://gohugo.io/documentation/)
+- [Thèmes Hugo](https://themes.gohugo.io/)
