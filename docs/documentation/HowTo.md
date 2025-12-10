@@ -68,7 +68,7 @@ Exemple utilisé dans ce guide [le thème Aafu](https://themes.gohugo.io/themes/
 
 ![Architecture de séquence](/docs/pictures/download.png "Architecture de séquences")
 
-#### Étapes de création du CV
+#### Étapes de création du CV à partir du thème Aafu
 
 Pour utiliser **aafu** comme thème dans votre propre projet Hugo :
 
@@ -78,7 +78,7 @@ Pour utiliser **aafu** comme thème dans votre propre projet Hugo :
 git submodule add https://github.com/darshanbaral/aafu.git themes/aafu
 ```
 
-2. Copiez les fichiers/dossiers suivants depuis aafu/ vers la racine de votre projet :
+2. Copiez les fichiers/dossiers suivants depuis ```aafu/``` vers la racine de votre projet :
 
 **Fichiers :**
 
@@ -96,12 +96,15 @@ git submodule add https://github.com/darshanbaral/aafu.git themes/aafu
 theme: aafu
 ```
 
-4. Installez les dépendances et démarrez le serveur de développement :
+4. Modifiez le fichier ```layouts/index.html``` pour personnaliser vos informations personnelles (nom, expériences, compétences, etc.).
+
+5. Installez les dépendances et démarrez le serveur de développement :
 
 ```bash
 npm install
 hugo server
 ```
+6. Accédez à votre CV sur http://localhost:1313
 
 ### 3. Créer des pages GitHub
 
