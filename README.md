@@ -2,11 +2,8 @@
 
 ## Objectif du Projet
 
-Ce projet a pour but de créer et publier un **CV interactif en ligne**.  
-Il utilise **Hugo** pour générer le site, et **GitHub Pages** pour l’hébergement.  
+Ce projet a pour but de créer et publier un **CV interactif en ligne**. Il utilise **Hugo** pour générer le site, et **GitHub Pages** pour l’hébergement.
 Le CV peut être consulté en local pendant le développement, ou directement en ligne après déploiement.
-
----
 
 ## Méthodes pour Générer et Afficher le CV
 
@@ -19,17 +16,13 @@ Cette méthode permet de tester et modifier le CV avant de le mettre en ligne.
 3. Lancer le serveur local : ```hugo server -D```
 4. Accéder au CV dans un navigateur : ```http://localhost:1313```
 
-Avantage : aperçu instantané après chaque modification.
+**Avantage :** aperçu instantané après chaque modification.
 
 ### 2. Méthode en Ligne (hébergée sur GitHub Pages)
 
-Après avoir poussé le projet sur GitHub, le CV est automatiquement publié à l’adresse : ```https://onsbbr.github.io/```
+Après avoir poussé le projet sur GitHub, le CV est automatiquement publié à l’adresse : ```https://repo-name.github.io/```. Chaque mise à jour envoyée sur GitHub déclenche une reconstruction automatique du site via GitHub Actions.
 
-Chaque mise à jour envoyée sur GitHub déclenche une reconstruction automatique du site via GitHub Actions.
-
-Avantage : CV consultable par n’importe qui, simplement via le lien.
-
----
+**Avantage :** CV consultable par n’importe qui, simplement via le lien.
 
 ## Termes Clés
 
@@ -40,27 +33,23 @@ Il convertit les fichiers du projet en un site complet dans le dossier **public/
 
 ### Git
 
-Outil de gestion de versions permettant de suivre les modifications et de collaborer.
-Il permet d’enregistrer, revenir en arrière, et synchroniser le code.
+Outil de gestion de versions permettant de suivre les modifications et de collaborer. Il permet d’enregistrer, revenir en arrière, et synchroniser le code.
 
 ### GitHub
 
-Plateforme en ligne permettant d’héberger des projets Git.
-C’est ici que le code du CV est stocké et mis à jour.
+Plateforme en ligne permettant d’héberger des projets Git. C’est ici que le code du CV est stocké et mis à jour.
 
 ### GitHub Pages
 
-Service de GitHub permettant d’héberger gratuitement un site web statique.
-Il prend le dossier généré par Hugo et le rend accessible via une URL publique (ex : onsbbr.github.io).
+Service de GitHub permettant d’héberger gratuitement un site web statique. Il prend le dossier généré par Hugo et le rend accessible via une URL publique (ex : onsbbr.github.io).
 
 ### GitHub Actions
 
-Système d’automatisation de GitHub.
-Dans ce projet, il sert à :
+Système d’automatisation de GitHub. Dans ce projet, il sert à :
 
-- reconstruire le site Hugo
-- publier automatiquement les fichiers sur GitHub Pages
-- mettre à jour le site sans intervention manuelle
+- Reconstruire le site Hugo
+- Publier automatiquement les fichiers sur GitHub Pages
+- Mettre à jour le site sans intervention manuelle
 
 ---
 
