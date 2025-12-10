@@ -209,8 +209,7 @@ GitHub créera automatiquement un fichier de workflow situé dans `.github/workf
 2. Enregistrer le workflow
 
 Aucune modification n’est nécessaire. Validez simplement avec **Commit changes**.
-Dès que vous poussez du nouveau contenu dans votre dépôt, GitHub génèrera automatiquement votre site Hugo.
-Ensuite, sur VS Code, fates un `pull`.
+Dès que vous poussez du nouveau contenu dans votre dépôt, GitHub génèrera automatiquement votre site Hugo. Ensuite, sur VS Code, faites un `pull`.
 
 ### Étape 3 : Activer GitHub Pages
 
@@ -230,7 +229,7 @@ Votre site sera accessible à l'adresse : `https://ton_pseudo.github.io/repo_nam
 ### Mise à jour du site
 
 Pour mettre à jour votre CV :
-1. Modifiez les fichiers de contenu dans le dossier `content/`
+1. Modifiez le fichier `index.html`
 2. Testez localement avec `hugo server -D`
 3. Commit et push vos modifications
 4. GitHub Actions déploiera automatiquement les changements
