@@ -2,63 +2,113 @@
 
 ## 1. Introduction
 
-Ce document vous permet de savoir les étapes basiques à suivre qui facilitent la création des projets. 
+Ce guide présente les étapes essentielles pour démarrer rapidement vos projets, les connecter à GitHub, créer un CV basé sur un portfolio Hugo, et publier votre site en ligne grâce à GitHub Pages.
 
-## 2.  How to
+## 2.  Comment faire
 
--   How to connect VScode to GitHub ?
--   How to create a CV based on a specific portfolio ?
--   How to create a GitHub pages ?
+-   Comment connecter VS Code à GitHub ?
+-   Comment créer un CV à partir d'un portfolio spécifique ?
+-   Comment créer des pages GitHub ?
 
-## 3. Answers
-### 1. Connect VScode to GitHub
+## 3. Réponses
 
-Afin de connecter votre projet sur VScode à votre compte GitHub, veuillez suivre les étapes suivantes :
+### 1. Connectez VScode à GitHub
 
-Après avoir créer votre projet sur VScode, il ne vous reste que de faire :
-- ```git init```
-- ```git add .```
-- ```git commit -m "votre message"```
+Pour connecter votre projet créé dans VS Code à votre compte GitHub, suivez les étapes ci-dessous :
 
+1. Ouvrez votre projet dans VS Code  
+2. Dans le terminal, initialisez Git :
+
+```bash
+git init
+git add .
+git commit -m "first commit"
+```
 ![Architecture de séquence](/docs/pictures/terminal1.png "Architecture de séquences")
 
-Après cela, copie le lien de ton projet GitHub :
+3. Copiez l’URL de votre dépôt GitHub :
 
 ![Architecture de séquence](/docs/pictures/lien.png "Architecture de séquences")
 
-- Reviens à VScode et tape :
-```git remote add origin https://github.com/onsbbr/onsbbr.github.io.git```
+4. Ajoutez ce lien comme dépôt distant :
 
-- Vérifie que le chemin a bien été pris en charge :
-```git remote -v```
+```bash
+git remote add origin https://github.com/onsbbr/onsbbr.github.io.git
+```
 
+5. Vérifiez que la connexion est correcte :
+
+```bash
+git remote -v
+```
 ![Architecture de séquence](/docs/pictures/terminal2.png "Architecture de séquences")
 
-Ensuite, tape :
-- ```git branch -M main```
-- ```git push -u origin main```
+6. Poussez votre projet vers GitHub :
 
+```bash
+git branch -M main
+git push -u origin main
+```
 ![Architecture de séquence](/docs/pictures/terminal3.png "Architecture de séquences")
 
-Ensuite, à chaque fois vous ajoutez une chose il suffit de faire :
-- ```git add .```
-- ```git commit -m "votre message"```
-- ```git push```
+7. Mise à jour du projet :
 
-### 2. Create a CV based on a specific portfolio
+```bash
+git init
+git add .
+git commit -m "votre message"
+```
 
-First of all, you have to chose a portfolio based on what you're working on.
+### 2. Créez un CV basé sur un portfolio spécifique
 
-You can check this [link](https://themes.gohugo.io/) to chose the one you want.
+Pour créer un CV avec un thème Hugo, il faut d'abord choisir un portfolio adapté.
 
-For example, for making a CV i chosed this [theme](https://themes.gohugo.io/themes/aafu/) of portfolio.
-
-Now let's see the steps on how to create your own CV based on the chosen portfolio.
-
-- Download the portfolio chosen
+Rendez-vous sur [la galerie officielle](https://themes.gohugo.io/), ensuite choisissez un thème.
+Exemple utilisé dans ce guide [le thème Aafu](https://themes.gohugo.io/themes/aafu/).
 
 ![Architecture de séquence](/docs/pictures/download.png "Architecture de séquences")
 
-- 
+#### Étapes de création du CV
 
-### 3. Create a GitHub pages
+Pour utiliser **aafu** comme thème dans votre propre projet Hugo :
+
+1. Ajouter le thème :
+
+```bash
+git submodule add https://github.com/darshanbaral/aafu.git themes/aafu
+```
+
+2. Copiez les fichiers/dossiers suivants depuis aafu/ vers la racine de votre projet :
+
+**Fichiers :**
+
+- config.yaml
+- package.json
+- tailwind.config.js
+
+**Dossiers :**
+
+- assets/
+- static/
+
+3. Activez le thème en le configurant dans le fichier ```config.yaml``` :
+```bash
+theme: aafu
+```
+
+4. Installez les dépendances et démarrez le serveur de développement :
+
+```bash
+npm install
+hugo server
+```
+
+### 3. Créer des pages GitHub
+
+Une fois votre CV créé, vous pouvez le publier en ligne facilement grâce à GitHub Pages.
+
+1. Assurez-vous que votre dépôt se nomme : ```votre-nom.github.io```
+2. Poussez votre projet Hugo sur GitHub.
+3. Ajoutez un workflow GitHub Actions pour générer votre site, pour cela créer le fichier ```.github/workflows/deploy.yml``` avec le contenu proposé par **Hugo**.
+4. GitHub générera automatiquement votre site.
+5. Votre CV sera accessible en ligne à l’adresse : ```https://votre-nom.github.io/```
