@@ -1,6 +1,9 @@
 # Guide de Création d'un CV en Ligne avec GitHub Pages
 
-Ce guide vous explique comment créer et déployer votre propre CV en ligne en utilisant GitHub Pages. Deux méthodes sont disponibles selon vos préférences.
+Ce guide vous explique comment créer et déployer votre propre CV en ligne en utilisant GitHub Pages. Deux méthodes sont disponibles selon vos préférences :
+
+- Méthode 1 : Configuration avec VSCode et GitHub
+- Méthode 2 : Déploiement automatiquement avec GitHub Actions
 
 ## Méthode 1 : Configuration avec VSCode et GitHub (Recommandée)
 
@@ -149,25 +152,25 @@ Cette méthode utilise Hugo (un générateur de site statique) et reconstruit au
 
 1. **Créer un nouveau repository sur GitHub**
    - Connectez-vous à votre compte GitHub
-   - Créez un nouveau repository (exemple : `mon-cv-hugo`)
+   - Créez un nouveau repository (exemple : `onsbbr.github.io`)
 
 2. **Initialiser un projet Hugo localement**
 ```bash
-   hugo new site mon-cv-hugo
-   cd mon-cv-hugo
+   hugo new site onsbbr.github.io
+   cd onsbbr.github.io
    git init
 ```
 
 3. **Choisir et installer un thème**
 
    - Visitez `https://themes.gohugo.io/` pour explorer les thèmes disponibles
-   - Exemple avec le thème [AAFU](https://github.com/darshanbaral/aafu) :
+   - Exemple avec le thème [aafu](https://github.com/darshanbaral/aafu) :
 ```bash
    git submodule add https://github.com/darshanbaral/aafu.git themes/aafu
 ```
 
 4. **Configurer le thème**
-   - Suivez les instructions d'installation spécifiques au thème choisi (vous trouverez les étapes dans ```/docs/documentation/HowTo.md```)
+   - Suivez les instructions d'installation spécifiques au thème choisi (vous trouverez les étapes dans ```/docs/documentation/GUIDE.md```)
    - Modifiez le fichier `config.toml` ou `hugo.toml` selon les recommandations du thème
    - Personnalisez le contenu dans le dossier `content/`
 
@@ -182,47 +185,42 @@ Cette méthode utilise Hugo (un générateur de site statique) et reconstruit au
 6. **Commit et push initial**
 ```bash
    git add .
-   git commit -m "Initial commit - Configuration Hugo"
-   git remote add origin git@github.com:votre-nom/mon-cv-hugo.git
+   git commit -m "Mon premier commit"
+   git remote add origin git@github.com:votre-nom/onsbbr.github.io.git
    git branch -M main
    git push -u origin main
 ```
 
-### Étape 2 : Configurer GitHub Actions pour Hugo
+### Étape 2 : Activer et configurer GitHub Pages
 
-Une fois votre projet Hugo envoyé sur GitHub, vous pouvez automatiser la génération et la mise en ligne du site grâce à **GitHub Actions**.
-
-1. Accéder aux workflows GitHub
-
-- Ouvrez votre dépôt sur GitHub.
-- Cliquez sur l’onglet **Actions**.
-
-![Résultat du workflow](/docs/pictures/hugoo.png "Workflow en action")
-
-- Dans les modèles proposés, recherchez **Hugo**.
-- Cliquez sur **Configure** ou **Set up this workflow**.
+1. Allez dans les paramètres du repository : `Settings → Pages`
+2. Sous "Source", sélectionnez `GitHub Actions`
+3. Cliquez sur `brwose all workflows` et cherche le workflow `hugo`
 
 ![Configuration du workflow GitHub Actions](/docs/pictures/workflowhugo.png "Fichier workflow Hugo")
 
 GitHub créera automatiquement un fichier de workflow situé dans `.github/workflows/hugo.yml`. Ce fichier contient une configuration prête à l’emploi pour construire et déployer un site Hugo.
 
-2. Enregistrer le workflow
+![Configuration du workflow GitHub Actions](/docs/pictures/hugoyml.png "Fichier workflow Hugo")
+
+4. Enregistrer le workflow
 
 Aucune modification n’est nécessaire. Validez simplement avec **Commit changes**.
-Dès que vous poussez du nouveau contenu dans votre dépôt, GitHub génèrera automatiquement votre site Hugo. Ensuite, sur VS Code, faites un `pull`.
+Dès que vous poussez du nouveau contenu dans votre dépôt, GitHub génèrera automatiquement votre site Hugo. Ensuite, sur VS Code, faites un `pull`. Le workflow se déclenchera automatiquement à chaque push.
 
-### Étape 3 : Activer GitHub Pages
+![Configuration du workflow GitHub Actions](/docs/pictures/commitchanges.png "Fichier workflow Hugo")
 
-1. Allez dans les paramètres du repository : `Settings → Pages`
-2. Sous "Source", sélectionnez `GitHub Actions`
-3. Le workflow se déclenchera automatiquement à chaque push
+### Étape 3 : Vérifier le déploiement
 
-![Configuration de GitHub Pages](/docs/pictures/githubpageshugo.png "Activation de GitHub Pages")
+1. Allez dans l'onglet `Actions` de votre repository
 
-4. **Vérifier le déploiement**
-   - Allez dans l'onglet `Actions` de votre repository
-   - Vérifiez que le workflow s'exécute correctement
-   - Une fois terminé, votre site sera accessible
+![Configuration du workflow GitHub Actions](/docs/pictures/pipeline.png "Fichier workflow Hugo")
+
+2. Vérifiez que le workflow s'exécute correctement
+
+![Configuration du workflow GitHub Actions](/docs/pictures/success.png "Fichier workflow Hugo")
+
+3. Une fois terminé, votre site sera accessible
 
 Votre site sera accessible à l'adresse : `https://ton_pseudo.github.io/repo_name/`
 
