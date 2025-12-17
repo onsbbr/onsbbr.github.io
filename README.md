@@ -4,9 +4,7 @@
 
 Ce projet propose **deux méthodes différentes** pour créer et mettre en ligne votre CV.  
 Vous pouvez choisir celle qui correspond le mieux à vos besoins et à votre niveau technique.
-
-Ce projet a pour but de créer et publier un **CV interactif en ligne**. Il utilise **Hugo** pour générer le site, et **GitHub Pages** pour l’hébergement.
-Le CV peut être consulté en local pendant le développement, ou directement en ligne après déploiement.
+Sachant que le CV peut être consulté en local pendant le développement, ou directement en ligne après déploiement.
 
 ## Méthodes pour Générer et Afficher le CV
 
@@ -50,11 +48,7 @@ Elle est recommandée pour un CV plus structuré, évolutif et professionnel.
 #### Étapes principales
 1. Installer Hugo sur la machine
 2. Choisir et configurer un thème Hugo
-3. Tester le site en local :
-```bash
-hugo server -D
-```
-
+3. Tester le site en local avec `hugo server -D`
 4. Pousser le projet sur GitHub
 5. Activer GitHub Pages avec GitHub Actions
 6. Utiliser le workflow Hugo généré automatiquement
