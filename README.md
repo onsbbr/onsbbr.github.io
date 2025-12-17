@@ -2,6 +2,9 @@
 
 ## Objectif du Projet
 
+Ce projet propose **deux méthodes différentes** pour créer et mettre en ligne votre CV.  
+Vous pouvez choisir celle qui correspond le mieux à vos besoins et à votre niveau technique.
+
 Ce projet a pour but de créer et publier un **CV interactif en ligne**. Il utilise **Hugo** pour générer le site, et **GitHub Pages** pour l’hébergement.
 Le CV peut être consulté en local pendant le développement, ou directement en ligne après déploiement.
 
@@ -9,20 +12,63 @@ Le CV peut être consulté en local pendant le développement, ou directement en
 
 ### 1. Méthode Locale (sur votre machine)
 
-Cette méthode permet de tester et modifier le CV avant de le mettre en ligne.
+Cette méthode repose sur un fichier **HTML statique** (`index.html`) et un déploiement simple via **GitHub Pages**.  
+Elle est idéale pour débuter et pour garder un contrôle total sur le code du CV.
 
-1. Installer Hugo  
-2. Ouvrir le projet dans VS Code ou dans un terminal  
-3. Lancer le serveur local : ```hugo server -D```
-4. Accéder au CV dans un navigateur : ```http://localhost:1313```
+#### Principe
+- Le CV est écrit directement en **HTML/CSS**
+- Les modifications sont faites localement avec **VS Code**
+- Chaque `git push` met automatiquement à jour le CV en ligne
 
-**Avantage :** aperçu instantané après chaque modification.
+#### Étapes principales
+1. Créer la structure du projet (`index.html`, `docs/`, `README.md`)
+2. Éditer le CV dans le fichier `index.html`
+3. Initialiser Git et pousser le projet sur GitHub
+4. Activer GitHub Pages depuis les paramètres du repository
 
-### 2. Méthode en Ligne (hébergée sur GitHub Pages)
+#### Accès au CV
+Une fois GitHub Pages activé, le CV est accessible à l’adresse : `https://votre-nom.github.io/`
 
-Après avoir poussé le projet sur GitHub, le CV est automatiquement publié à l’adresse : ```https://repo-name.github.io/```. Chaque mise à jour envoyée sur GitHub déclenche une reconstruction automatique du site via GitHub Actions.
+#### Avantages
+- Simple à comprendre et à mettre en place  
+- Aucun outil supplémentaire requis  
+- Contrôle total du HTML et du CSS  
+- Idéal pour un premier CV en ligne
 
-**Avantage :** CV consultable par n’importe qui, simplement via le lien.
+### 2. Méthode 2 : CV avec Hugo et Déploiement Automatique via GitHub Actions
+
+Cette méthode utilise **Hugo**, un générateur de site statique, combiné à **GitHub Actions** pour automatiser le déploiement.  
+Elle est recommandée pour un CV plus structuré, évolutif et professionnel.
+
+#### Principe
+- Le CV est généré à partir d’un **thème Hugo**
+- Le site est testé localement avec le serveur Hugo
+- Chaque `git push` déclenche automatiquement :
+  - la génération du site
+  - le déploiement via GitHub Pages
+
+#### Étapes principales
+1. Installer Hugo sur la machine
+2. Choisir et configurer un thème Hugo
+3. Tester le site en local :
+```bash
+hugo server -D
+```
+
+4. Pousser le projet sur GitHub
+5. Activer GitHub Pages avec GitHub Actions
+6. Utiliser le workflow Hugo généré automatiquement
+
+#### Accès au CV
+Après le déploiement automatique, le site est accessible à l’adresse : `https://votre-nom.github.io/`
+
+#### Avantages
+
+- Déploiement entièrement automatique
+- Mise à jour rapide et sans action manuelle
+- Large choix de thèmes professionnels
+- Structure claire et maintenable
+- Idéal pour des mises à jour fréquentes
 
 ## Termes Clés
 
@@ -53,11 +99,16 @@ Système d’automatisation de GitHub. Dans ce projet, il sert à :
 
 ---
 
-## Résumé
+## Référence
 
-Ce projet permet de :
+**Méthode 1 :**
 
-- Construire un CV moderne
-- L'afficher localement via ```http://localhost:1313```
-- Le publier en ligne via ```https://onsbbr.github.io/```
-- Automatiser le déploiement grâce à GitHub Actions
+- Site CV : `https://onsbbr.github.io/gitons.github.io/`
+- Nom repo : gitons.github.io
+- Lien repo : `https://github.com/onsbbr/gitons.github.io`
+
+**Méthode 2 :**
+
+- Site CV : `https://onsbbr.github.io/gitcv.github.io/`
+- Nom repo : gitcv.github.io
+- Lien repo : `https://github.com/onsbbr/gitcv.github.io`
