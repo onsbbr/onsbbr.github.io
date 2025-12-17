@@ -74,6 +74,8 @@ Veuillez appliquer cette structure pour pouvoir suivre les démarches qui suiven
 
 ![Architecture de séquence](/docs/pictures/githubpages.png "Architecture de séquences")
 
+5. Votre CV sera accessible à l'adresse : `https://votre-nom.github.io`
+
 ## Remarque :
 Exemple de remplissage de fichier `index.html`, vous pouvez tout simplement le re-configurer avec vos données personnelles :
 
@@ -572,7 +574,3 @@ Exemple de remplissage de fichier `index.html`, vous pouvez tout simplement le r
 </body>
 </html>
 ```
-
----
-
-Votre CV sera accessible à l'adresse : `https://votre-nom.github.io`
