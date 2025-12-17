@@ -66,9 +66,9 @@ Visitez `http://localhost:1313` pour prévisualiser votre site
 
 2. **Activer GitHub Pages et Actions**
 
-   - Allez dans les paramètres du repository : `Settings` → `Pgaes`
+   - Allez dans les paramètres du repository : `Settings` → `Pages`
    - Sous `Source`, sélectionnez `GitHub Actions`
-   - Cliquez sur browse all workflows et cherche le workflow `hugo` ensuite configurer
+   - Cliquez sur browse all workflows et cherche le workflow `hugo`, ensuite `Configure`
 
 ![Configuration du workflow GitHub Actions](/docs/pictures/workflowhugo.png "Fichier workflow Hugo")
 
@@ -96,7 +96,7 @@ Dès que vous poussez du nouveau contenu dans votre dépôt, GitHub génèrera a
 
 3. Une fois terminé, votre site sera accessible
 
-Votre site sera accessible à l'adresse : `https://ton_pseudo.github.io/repo_name/`
+Votre site sera accessible à l'adresse : `https://ton_pseudo.github.io/`
 
 ## Remarque :
 Exemple de remplissage de fichier `layouts/index.html`, vous pouvez tout simplement le re-configurer avec vos données personnelles :
