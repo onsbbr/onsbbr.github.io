@@ -24,7 +24,6 @@ Veuillez appliquer cette structure pour pouvoir suivre les démarches qui suiven
    ├── index.html
    └── README.md
 ```
-![Architecture de séquence](/docs/pictures/structureGITHUB.png "Architecture de séquences")
 
 3. **Description des fichiers**
    - `index.html` : Contient le code HTML de votre CV
