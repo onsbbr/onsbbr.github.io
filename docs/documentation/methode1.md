@@ -9,6 +9,8 @@ Cette méthode utilise une configuration manuelle de CV et reconstruit automatiq
 
 ## Étape 1 : Configuration du Projet Local
 
+Veuillez appliquer cette structure pour pouvoir suivre les démarches qui suivent :
+
 1. **Créer la structure du projet**
    - Créez un dossier vide sur votre ordinateur (par exemple `GITHUB` sur votre bureau)
    - Ouvrez VSCode et ouvrez ce dossier : `File → Open Folder → GITHUB → Select folder`
