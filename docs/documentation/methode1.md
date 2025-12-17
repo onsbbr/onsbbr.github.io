@@ -75,7 +75,7 @@ Veuillez appliquer cette structure pour pouvoir suivre les démarches qui suiven
 ![Architecture de séquence](/docs/pictures/githubpages.png "Architecture de séquences")
 
 ## Remarque :
-Exemple de remplissage de fichier `index.html` :
+Exemple de remplissage de fichier `index.html`, vous pouvez tout simplement le re-configurer avec vos données personnelles :
 
 ```bash
 <!DOCTYPE html>
