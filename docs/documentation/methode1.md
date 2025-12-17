@@ -68,7 +68,7 @@ Veuillez appliquer cette structure pour pouvoir suivre les démarches qui suiven
 ## Étape 3 : Activer GitHub Pages
 
 1. Allez dans les paramètres du repository : `Settings → Pages`
-2. Sous "Source", sélectionnez `Deploy from a branch`
+2. Sous `Source`, sélectionnez `Deploy from a branch`
 3. Choisissez la branche `main` et le dossier `/ (root)`
 4. Cliquez sur `Save`
 
