@@ -1,18 +1,18 @@
 # Guide pratique
 
-## 1. Introduction
+## Introduction
 
 Ce guide présente les étapes essentielles pour démarrer rapidement vos projets, les connecter à GitHub, créer un CV basé sur un portfolio Hugo, et publier votre site en ligne grâce à GitHub Pages.
 
-## 2.  Comment faire
+## Questions
 
 -   Comment connecter VS Code à GitHub ?
 -   Comment installer Hugo ?
 -   Quelles sont les étapes de création du CV à partir du thème Aafu
 
-## 3. Réponses
+## Réponses
 
-### Connectez VScode à GitHub
+### 1. Connectez VScode à GitHub
 
 Pour connecter votre projet créé dans VS Code à votre compte GitHub, suivez les étapes ci-dessous :
 
@@ -59,7 +59,7 @@ git add .
 git commit -m "votre message"
 ```
 
-### Installer Hugo
+### 2. Installer Hugo
 
 Hugo est un générateur de sites statiques compatible avec plusieurs systèmes d’exploitation, notamment Windows, Linux et macOS. Les méthodes d’installation peuvent varier selon le système utilisé.
 
@@ -95,7 +95,7 @@ choco install hugo-extended
 
 ![Architecture de séquence](/docs/pictures/hugo_install.png "Initialiser Git")
 
-### Étapes de création du CV à partir du thème Aafu
+### 3. Étapes de création du CV à partir du thème Aafu
 
 Pour installer le thème `aafu` veuillez suivre les étapes suivantes :
 
