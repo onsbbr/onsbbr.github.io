@@ -53,7 +53,6 @@ Veuillez appliquer cette structure pour pouvoir suivre les démarches qui suiven
    git add .
    git commit -m "Mon premier commit"
 ```
-![Architecture de séquence](/docs/pictures/phase1.png "Architecture de séquences")
 
 3. **Lier le projet local à GitHub**
 

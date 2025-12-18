@@ -2,12 +2,15 @@
 
 ## Objectif du Projet
 
-Ce projet propose **deux méthodes différentes** pour créer et mettre en ligne votre CV.  
+Ce projet vous propose **deux méthodes différentes** pour créer et mettre en ligne votre CV.  
 Vous pouvez choisir celle qui correspond le mieux à vos besoins et à votre niveau technique.
+
+- Méthode 1 : Configuration avec VSCode et GitHub (Recommandée)
+- Méthode 2 : Déploiement automatiquement avec GitHub Actions
 
 Sachant que le CV peut être consulté en **local** pendant le développement, ou directement **en ligne** après déploiement.
 
-## Méthodes pour Générer et Afficher le CV
+## Méthodes pour générer et afficher le CV
 
 ### 1. Méthode Locale (sur votre machine)
 
@@ -92,9 +95,32 @@ Il convertit les fichiers du projet en un site complet dans le dossier **public/
 - Publier automatiquement les fichiers sur GitHub Pages
 - Mettre à jour le site sans intervention manuelle
 
+### Mise à jour du site
+
+Pour mettre à jour votre CV :
+1. Modifiez le fichier `index.html`
+2. Testez localement avec `hugo server -D`
+3. Commit et push vos modifications
+4. GitHub Actions déploiera automatiquement les changements
+
+## Notes Importantes
+
+- La première méthode est recommandée pour les débutants
+- Assurez-vous que votre repository est public pour utiliser GitHub Pages gratuitement
+- Le nom du repository `votre-nom.github.io` vous donnera une URL personnalisée
+- Les modifications peuvent prendre quelques minutes avant d'être visibles en ligne
+
+## Références
+
+- [Documentation GitHub Pages](https://docs.github.com/pages)
+- [Guide Git](https://git-scm.com/doc)
+- [Documentation VSCode](https://code.visualstudio.com/docs)
+- [Documentation Hugo](https://gohugo.io/documentation/)
+- [Thèmes Hugo](https://themes.gohugo.io/)
+
 ---
 
-## Référence
+## Ressources Supplémentaires
 
 **Méthode 1 :**
 
