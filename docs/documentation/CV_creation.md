@@ -1,16 +1,15 @@
 # Guide de Création d'un CV en Ligne avec GitHub Pages
 
-Ce guide vous explique comment créer et déployer votre propre CV en ligne en utilisant GitHub Pages. Deux méthodes sont disponibles selon vos préférences :
+Ce guide vous explique comment créer et déployer votre propre CV en ligne en utilisant **GitHub Pages**. Deux méthodes sont disponibles selon vos préférences :
 
-- Méthode 1 : Configuration avec VSCode et GitHub
+- Méthode 1 : Configuration avec VSCode et GitHub (Recommandée)
 - Méthode 2 : Déploiement automatiquement avec GitHub Actions
 
-## Méthode 1 : Configuration avec VSCode et GitHub (Recommandée)
-
+## Méthode 1 : Configuration avec VSCode et GitHub
 ### Prérequis
-- Un compte GitHub
-- VSCode installé sur votre ordinateur
-- Git installé sur votre système
+- Un compte **GitHub**
+- **VSCode** installé sur votre ordinateur
+- **Git** installé sur votre système
 
 ### Étape 1 : Configuration du Projet Local
 
@@ -27,7 +26,7 @@ Ce guide vous explique comment créer et déployer votre propre CV en ligne en u
    ├── index.html
    └── README.md
 ```
-![Architecture de séquence](/docs/pictures/structureGITHUB.png "Architecture de séquences")
+![Architecture de séquence](/docs/pictures/structureGITHUB.png "Structure du projet")
 
 3. **Description des fichiers**
    - `index.html` : Contient le code HTML de votre CV
@@ -43,10 +42,10 @@ Ce guide vous explique comment créer et déployer votre propre CV en ligne en u
    - Connectez-vous à votre compte GitHub
    - Créez un nouveau repository (de préférence nommé `votre-nom.github.io`)
 
-![Architecture de séquence](/docs/pictures/CreateNewRepo.png "Architecture de séquences")
-![Architecture de séquence](/docs/pictures/NameNewRepo.png "Architecture de séquences")
-![Architecture de séquence](/docs/pictures/configurationPublic.png "Architecture de séquences")
-![Architecture de séquence](/docs/pictures/boutonCreation.png "Architecture de séquences")
+![Architecture de séquence](/docs/pictures/CreateNewRepo.png "Créer un nouveau repo")
+![Architecture de séquence](/docs/pictures/NameNewRepo.png "Nommer le repo")
+![Architecture de séquence](/docs/pictures/configurationPublic.png "Configuration en public")
+![Architecture de séquence](/docs/pictures/boutonCreation.png "Création du repo")
 
 2. **Initialiser Git dans VSCode**
 
@@ -57,7 +56,7 @@ Ce guide vous explique comment créer et déployer votre propre CV en ligne en u
    git add .
    git commit -m "Mon premier commit"
 ```
-![Architecture de séquence](/docs/pictures/phase1.png "Architecture de séquences")
+![Architecture de séquence](/docs/pictures/phase1.png "Initialiser Git")
 
 3. **Lier le projet local à GitHub**
 
