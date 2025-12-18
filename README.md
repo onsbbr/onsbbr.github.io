@@ -23,10 +23,10 @@ Elle est idéale pour débuter et pour garder un contrôle total sur le code du 
 1. Créer la structure du projet (`index.html`, `README.md`, ...)
 2. Éditer le CV dans le fichier `index.html`
 3. Initialiser Git et pousser le projet sur GitHub
-4. Activer `GitHub Pages` depuis les paramètres du repository
+4. Activer **GitHub Pages** depuis les paramètres du repository
 
 #### Accès au CV
-Une fois `GitHub Pages` activé, le CV est accessible à l’adresse : `https://votre-nom.github.io/`
+Une fois **GitHub Pages** activé, le CV est accessible à l’adresse : `https://votre-nom.github.io/`
 
 #### Avantages
 - Simple à comprendre et à mettre en place  
@@ -36,7 +36,7 @@ Une fois `GitHub Pages` activé, le CV est accessible à l’adresse : `https://
 
 ### 2. Méthode 2 : CV avec Hugo et Déploiement Automatique via GitHub Actions
 
-Cette méthode utilise `**Hugo**`, un générateur de site statique, combiné à `**GitHub Actions**` pour automatiser le déploiement.  
+Cette méthode utilise **Hugo**, un générateur de site statique, combiné à **GitHub Actions** pour automatiser le déploiement.  
 Elle est recommandée pour un CV plus structuré, évolutif et professionnel.
 
 #### Principe
