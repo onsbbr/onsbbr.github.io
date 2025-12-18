@@ -65,10 +65,35 @@ Hugo est un générateur de sites statiques compatible avec plusieurs systèmes 
 
 Dans ce projet, l’installation a été réalisée sur Windows. Les étapes suivies sont les suivantes :
 
-1. Accédez au site officiel de Hugo : `https://gohugo.io`
-2. Dans la section Download, téléchargez la version Hugo Extended pour Windows (fichier .zip), car elle est nécessaire pour les thèmes utilisant des outils comme SCSS.
-3. Décompressez le fichier téléchargé et récupérez le fichier hugo.exe.
-4. Placez le fichier hugo.exe dans un dossier dédié, par exemple :
+1. Ouvrir PowerShell en mode administrateur
+2. Autoriser l'exécution des scripts avec la commande :
+
+```bash
+Set-ExecutionPolicy Bypass -Scope Process -Force
+```
+
+3. Installer Chocolately
+
+```bash
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+4. Vérifier l'installation :
+
+```bash
+choco --version
+```
+
+![Architecture de séquence](/docs/pictures/choco_install.png "Initialiser Git")
+
+5. Ouvrir PowerShell en mode administrateur
+6. Installer Hugo :
+
+```bash
+choco install hugo-extended
+```
+
+![Architecture de séquence](/docs/pictures/hugo_install.png "Initialiser Git")
 
 ### Étapes de création du CV à partir du thème Aafu
 
