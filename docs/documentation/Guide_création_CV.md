@@ -26,7 +26,6 @@ Ce guide vous explique comment créer et déployer votre propre CV en ligne en u
    ├── index.html
    └── README.md
 ```
-![Architecture de séquence](/docs/pictures/structureGITHUB.png "Structure du projet")
 
 3. **Description des fichiers**
    - `index.html` : Contient le code HTML de votre CV
@@ -56,7 +55,6 @@ Ce guide vous explique comment créer et déployer votre propre CV en ligne en u
    git add .
    git commit -m "Mon premier commit"
 ```
-![Architecture de séquence](/docs/pictures/phase1.png "Initialiser Git")
 
 3. **Lier le projet local à GitHub**
 
@@ -67,7 +65,6 @@ Ce guide vous explique comment créer et déployer votre propre CV en ligne en u
    git branch -M main
    git push -u origin main
 ```
-![Architecture de séquence](/docs/pictures/gitPush.png "Architecture de séquences")
 
 ### Étape 3 : Activer GitHub Pages
 

@@ -95,6 +95,12 @@ choco install hugo-extended
 
 ![Architecture de séquence](/docs/pictures/hugo_install.png "Initialiser Git")
 
+7. Vérifier l'installation :
+
+```bash
+hugo version
+```
+
 ### 3. Étapes de création du CV à partir du thème Aafu
 
 Pour installer le thème `aafu` veuillez suivre les étapes suivantes :
