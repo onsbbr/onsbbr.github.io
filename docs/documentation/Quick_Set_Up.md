@@ -23,7 +23,7 @@
 
 `Settings → Pages → Source : Deploy from a branch → main → Save`
 
-**Sur VSCode**
+**Dans un navigateur**
 
 Accèdez à `https://votre-nom.github.io`
 
@@ -66,7 +66,7 @@ git submodule add https://github.com/darshanbaral/aafu.git themes/aafu
 
 `Settings → Pages → Source : GitHub Actions → browse all workflows → Hugo → Configure → Save → Commit Changes`
 
-**Sur VSCode**
+**Dans un navigateur**
 
 Accèdez à `https://votre-nom.github.io`
 
