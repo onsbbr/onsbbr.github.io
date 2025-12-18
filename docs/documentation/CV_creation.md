@@ -163,15 +163,15 @@ Dès que vous poussez du nouveau contenu dans votre dépôt, GitHub génèrera a
 
 1. Allez dans l'onglet `Actions` de votre repository
 
-![Configuration du workflow GitHub Actions](/docs/pictures/pipeline.png "Fichier workflow Hugo")
+![Configuration du workflow GitHub Actions](/docs/pictures/actions.png "Fichier workflow Hugo")
 
 2. Vérifiez que le workflow s'exécute correctement
 
-![Configuration du workflow GitHub Actions](/docs/pictures/success.png "Fichier workflow Hugo")
+![Configuration du workflow GitHub Actions](/docs/pictures/pipeline.png "Fichier workflow Hugo")
 
 3. Une fois terminé, votre site sera accessible
 
-Votre site sera accessible à l'adresse : `https://ton_pseudo.github.io/repo_name/`
+Votre site sera accessible à l'adresse : `https://ton_pseudo.github.io/`
 
 ### Mise à jour du site
 
