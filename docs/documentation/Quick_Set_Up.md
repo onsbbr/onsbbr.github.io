@@ -21,7 +21,7 @@
 
 **Sur GitHub**
 
-`Settings → Pages → Deploy from a branch → main → Save`
+`Settings → Pages → Source : Deploy from a branch → main → Save`
 
 **Sur VSCode**
 
@@ -35,18 +35,13 @@ Accèdez à `https://votre-nom.github.io`
 
 # Commandes pour la méthode 2
 
+**Sur VSCode**
 
+```bash
+git submodule add https://github.com/darshanbaral/aafu.git themes/aafu
+```
 
-
-
-
-
-
-
-
-
-
-
+*à remplir*
 
 **Sur VSCode**
 
@@ -57,7 +52,7 @@ Accèdez à `https://votre-nom.github.io`
 ```
 **Sur GitHub**
 
-`New → votre-nom.github.io → Create repository`
+`New → Repo name : votre-nom.github.io → Create repository`
 
 **Sur VSCode**
 
@@ -69,7 +64,7 @@ Accèdez à `https://votre-nom.github.io`
 
 **Sur GitHub**
 
-`Settings → Pages → Deploy from a branch → main → Save`
+`Settings → Pages → Source : GitHub Actions → browse all workflows → Hugo → Configure → Save → Commit Changes`
 
 **Sur VSCode**
 
