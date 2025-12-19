@@ -41,8 +41,6 @@ Accèdez à `https://votre-nom.github.io`
 git submodule add https://github.com/darshanbaral/aafu.git themes/aafu
 ```
 
-*à remplir*
-
 **Sur VSCode**
 
 ```bash
